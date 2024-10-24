@@ -1,0 +1,186 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2000 1500'%3E%3Cdefs%3E%3Cpath fill='none' stroke-width='91.6' id='a' d='M0.74-509.63l485.39 352.65l-185.4 570.61h-599.97l-185.4-570.61L0.74-509.63 M0.74-510.87l-486.56 353.51l185.85 571.99h601.42L487.3-157.36L0.74-510.87L0.74-510.87z'/%3E%3C/defs%3E%3Cg style='transform-origin:center'%3E%3Cg transform='rotate(72 0 0)' style='transform-origin:center'%3E%3Cg transform='rotate(-160 0 0)' style='transform-origin:center'%3E%3Cg transform='translate(1000 750)'%3E%3Cuse stroke='%23000' href='%23a' transform='rotate(10 0 0) scale(1.1)'/%3E%3Cuse stroke='%2302000a' href='%23a' transform='rotate(20 0 0) scale(1.2)'/%3E%3Cuse stroke='%23040013' href='%23a' transform='rotate(30 0 0) scale(1.3)'/%3E%3Cuse stroke='%2306001d' href='%23a' transform='rotate(40 0 0) scale(1.4)'/%3E%3Cuse stroke='%23070026' href='%23a' transform='rotate(50 0 0) scale(1.5)'/%3E%3Cuse stroke='%23090030' href='%23a' transform='rotate(60 0 0) scale(1.6)'/%3E%3Cuse stroke='%230b003a' href='%23a' transform='rotate(70 0 0) scale(1.7)'/%3E%3Cuse stroke='%230d0043' href='%23a' transform='rotate(80 0 0) scale(1.8)'/%3E%3Cuse stroke='%230f014d' href='%23a' transform='rotate(90 0 0) scale(1.9)'/%3E%3Cuse stroke='%23110156' href='%23a' transform='rotate(100 0 0) scale(2)'/%3E%3Cuse stroke='%23130160' href='%23a' transform='rotate(110 0 0) scale(2.1)'/%3E%3Cuse stroke='%2315016a' href='%23a' transform='rotate(120 0 0) scale(2.2)'/%3E%3Cuse stroke='%23160173' href='%23a' transform='rotate(130 0 0) scale(2.3)'/%3E%3Cuse stroke='%2318017d' href='%23a' transform='rotate(140 0 0) scale(2.4)'/%3E%3Cuse stroke='%231a0186' href='%23a' transform='rotate(150 0 0) scale(2.5)'/%3E%3Cuse stroke='%231C0190' href='%23a' transform='rotate(160 0 0) scale(2.6)'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+background-attachment: fixed;
+background-size: cover;
+  color: #fff; 
+  transition: margin-left 0.5s; 
+}
+
+h1, h2 {
+  text-align: center;
+  font-size: 2em;
+}
+h3{
+  text-align: center;
+  font-size: 3rem;
+}
+.menu-links {
+  background-color: transparent; 
+  padding: 0;
+  list-style: none; 
+}
+
+.menu-links li {
+  margin: -20px 0; 
+}
+
+.menu-links li a {
+  display: block; 
+  background-color: black; 
+  color: white; 
+  padding: 10px; 
+  border: 1px solid white; 
+  border-radius: 10px; 
+  text-decoration: none; 
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s; 
+}
+
+.menu-links li a:hover {
+  background-color: white;
+  color: black; 
+  box-shadow: 0 0 10px white, 0 0 20px white; 
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  transition: transform 0.3s; 
+}
+
+img:hover {
+  transform: scale(1.05); 
+}
+
+p {
+  text-align: center;
+  margin: 20px 10px;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.side-menu {
+  height: 100%;
+  width: 250px; 
+  position: fixed;
+  top: 0;
+  left: -250px; 
+  background-color: transparent; 
+  transition: left 0.3s; 
+  z-index: 1000; 
+  overflow-y: auto; 
+}
+
+.menu-icon {
+  font-size: 30px;
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1001; 
+  background-color: #37028c; 
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s; 
+}
+
+.menu-icon:hover {
+  background-color: #020303; 
+}
+
+.menu-links {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-links li {
+  padding: 15px;
+  text-align: left;
+}
+
+.menu-links li a {
+  color: white; 
+  text-decoration: none; 
+}
+
+.menu-links li a:hover {
+  text-decoration: underline; 
+}
+
+.section {
+  padding: 50px;
+  border-bottom: 2px solid #ccc; 
+  animation: fadeIn 0.5s; 
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.expanded-image {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.expanded-image img {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.gallery {
+  position: relative;
+  display: flex;
+  align-items: center; 
+  overflow: hidden; 
+  width: 80%; 
+  margin: 0 auto; 
+}
+
+.arrow {
+  background-color: rgba(0, 0, 0, 0.5); 
+  color: white; 
+  border: none; 
+  cursor: pointer; 
+  font-size: 30px; 
+  padding: 10px; 
+  position: absolute; 
+  top: 50%; 
+  transform: translateY(-50%); 
+  z-index: 10; 
+}
+
+.arrow.left {
+  left: 10px; 
+}
+
+.arrow.right {
+  right: 10px; 
+}
+
+.gallery-images {
+  display: flex; 
+  transition: transform 0.5s ease; 
+}
+
+.gallery-image {
+  width: 500px; 
+  height: auto; 
+  display: block; 
+  margin: 0 5px; 
+}
